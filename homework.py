@@ -84,7 +84,6 @@ class SportsWalking(Training):
 
 class Swimming(Training):
     """Тренировка: плавание."""
-
     LEN_STEP = 1.38
     KOEF_3 = 1.1
     KOEF_4 = 2
@@ -107,7 +106,6 @@ class Swimming(Training):
 
 def read_package(workout_type: str, data: list) -> Training:
     """Прочитать данные полученные от датчиков."""
-
     type_list = {
         'SWM': Swimming,
         'RUN': Running,
