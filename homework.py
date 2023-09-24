@@ -120,7 +120,7 @@ def read_package(workout_type: str, data: list[int]) -> Training:
     }
 
     if workout_type not in type_list:
-        raise TypeError('Неизвестный тип тренировки в пакете данных.')
+        raise ValueError('Неизвестный тип тренировки в пакете данных.')
     else:
         return type_list[workout_type](*data)
 
